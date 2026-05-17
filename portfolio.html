@@ -462,6 +462,7 @@
     letter-spacing: 0.1em;
     color: var(--white);
     margin-bottom: 8px;
+    font-weight: 700;
   }
   .portfolio-desc {
     font-size: 0.65rem;
@@ -617,6 +618,60 @@
     5% { opacity: 1; }
     95% { opacity: 0.2; }
     100% { top: 100vh; opacity: 0; }
+  }
+
+  /* Player 2 — reduce size */
+  .player-2 .dual-video-container {
+    max-width: 45%;
+    margin: 0 auto;
+  }
+  .dual-video-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 9/16;
+    background: #000;
+    overflow: hidden;
+    border: 1px solid rgba(30,127,190,0.2);
+  }
+  .dual-video-container.vertical {
+    aspect-ratio: 9/16;
+  }
+  .dual-video-container video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .dual-player-info { padding: 18px 4px 0; }
+  .dual-player-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    color: var(--white);
+    margin-bottom: 5px;
+    font-weight: 700;
+  }
+  .dual-player-sub {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    color: var(--gray);
+    text-transform: uppercase;
+  }
+  .player-label {
+    font-size: 0.6rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .player-label::before {
+    content: '';
+    width: 20px; height: 1px;
+    background: var(--gold);
   }
 
   /* Responsive */
